@@ -15,6 +15,8 @@
 
 package com.google.maps.model;
 
+import com.google.maps.model.transitDetails.TransitDetails;
+
 /**
  * Each element in the steps of a {@link DirectionsLeg} defines a single step of the calculated
  * directions. A step is the most atomic unit of a direction's route, containing a single step
@@ -78,4 +80,11 @@ public class DirectionsStep {
    * Modes</a> for more detail.
    */
   public TravelMode travelMode;
+
+  /**
+   * {@code transitDetails} is transit details when the step has TravelMode type TRANSIT
+   * <a href="https://developers.google.com/maps/documentation/directions/#TransitDetails">Transit
+   * Details</a> for more detail.
+   */
+  public TransitDetails transitDetails;
 }
